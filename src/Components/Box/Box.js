@@ -44,9 +44,22 @@ function Box({ score }) {
           <Logo/>
           </Title>
             <ScoreBox>
-              Score
+              <div style={{
+                marginBottom: '5px',
+              }}>
+              <span 
+              style={{
+                color: 'hsl(229, 64%, 46%)',
+                fontFamily: 'asekbold',
+                marginBottom: '10px',
+                fontSize: '30px'
+              }}>SCORE</span>
               <br/>
-              {score}
+              <span
+              style={{
+                color: 'hsl(229, 25%, 31%)'
+              }}>{score}</span>
+              </div>
             </ScoreBox>
         </StyledBox>
     

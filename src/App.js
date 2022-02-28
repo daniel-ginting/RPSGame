@@ -5,11 +5,6 @@ import './App.css';
 import Main from './Components/Main/Main';
 
 
-const Button = styled.button`
-  color: red;
-  margin-right: 50px
-`
-
 const StyledApp = styled.div`
   
   text-align: center; 
@@ -22,7 +17,8 @@ class App extends Component {
       player: '',
       computer: '',
       winner: '',
-      score: 0
+      score: 0,
+      route: 'select'
     }
   }
 
@@ -69,14 +65,23 @@ class App extends Component {
   //   this.setState({winner: asek()})
   // }
 
+  setRoute = (route) => {
+    this.setState({route: route})
+  }
+
   render() {
     return (
+      <div>
       <StyledApp>
         <Box score={this.state.score}/>
-        <Main setChoice={this.setChoice}/>
-        <h1>You: {this.state.player} vs Computer: {this.state.computer}</h1>
-        <h1>{this.state.winner}</h1>
+        <Main 
+          setChoice={this.setChoice} 
+          route={this.state.route}
+          setRoute={this.setRoute}/>
+        {/* <h1>You: {this.state.player} vs Computer: {this.state.computer}</h1>
+        <h1>{this.state.winner}</h1> */}
       </StyledApp>
+      </div>
     )
   }
 }
