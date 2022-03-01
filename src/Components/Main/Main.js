@@ -165,7 +165,6 @@ const Main = ({ setChoice, route, setRoute }) => {
         </Modal> 
         : 
         ''}
-        {console.log(modal)}
     </Container>
   )
 }

@@ -88,7 +88,6 @@ class App extends Component {
           computer={this.state.computer}
           winner={this.state.winner}/>
         }
-        {console.log(this.state.route)}
         {/* <h1>You: {this.state.player} vs Computer: {this.state.computer}</h1>
         <h1>{this.state.winner}</h1> */}
 

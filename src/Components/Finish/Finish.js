@@ -268,7 +268,6 @@ const Finish = ({ setRoute, player, computer, winner }) => {
       }}>
         <PickedText>YOU PICKED</PickedText>
         {renderPlayer()}
-        {console.log(player)}
       </div>
 
       <div style={{
@@ -325,7 +324,6 @@ const Finish = ({ setRoute, player, computer, winner }) => {
         </Modal> 
         : 
         ''}
-        {console.log(modal)}
       </div>
     </div>
   )
