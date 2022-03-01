@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Box from './Components/Box/Box';
 import './App.css';
 import Main from './Components/Main/Main';
+import Finish from './Components/Finish/Finish';
+
 
 
 const StyledApp = styled.div`
@@ -74,12 +76,22 @@ class App extends Component {
       <div>
       <StyledApp>
         <Box score={this.state.score}/>
+
+        {this.state.route === 'select' ? 
         <Main 
-          setChoice={this.setChoice} 
-          route={this.state.route}
-          setRoute={this.setRoute}/>
+        setChoice={this.setChoice} 
+        route={this.state.route}
+        setRoute={this.setRoute}/> :
+        <Finish
+          setRoute={this.setRoute}
+          player={this.state.player}
+          computer={this.state.computer}
+          winner={this.state.winner}/>
+        }
+        {console.log(this.state.route)}
         {/* <h1>You: {this.state.player} vs Computer: {this.state.computer}</h1>
         <h1>{this.state.winner}</h1> */}
+
       </StyledApp>
       </div>
     )

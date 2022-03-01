@@ -38,6 +38,7 @@ const BigBlueCircle = styled.button`
     align-items: center;
     box-shadow: 0px 10px hsl(230, 89%, 62%);
     margin-right: 64px;
+    cursor: pointer;
 `
 
 const BigYellowCircle = styled.button`
@@ -49,6 +50,7 @@ const BigYellowCircle = styled.button`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 10px hsl(39, 89%, 49%);
+    cursor: pointer;
 `
 
 const BigRedCircle = styled.button`
@@ -60,6 +62,7 @@ const BigRedCircle = styled.button`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 10px hsl(349, 71%, 52%);
+    cursor: pointer;
 `
 
 const StyledTriangle = styled.div`
