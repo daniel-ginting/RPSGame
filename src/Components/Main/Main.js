@@ -51,6 +51,7 @@ const BigYellowCircle = styled.button`
     align-items: center;
     box-shadow: 0px 10px hsl(39, 89%, 49%);
     cursor: pointer;
+    margin: auto;
 `
 
 const BigRedCircle = styled.button`
@@ -67,13 +68,19 @@ const BigRedCircle = styled.button`
 
 const StyledTriangle = styled.div`
     position: absolute;
-    top: 360px;
-    z-index: -1;
+    top: 40%;
+    left: 40%;
+    // margin: auto;
+    // display: block;
+    z-index: -1000;
+    // text-align: center;
 `
 
 const NewLine = styled.div`
     display: contents;
+    margin: auto;
     margin-top:100px;
+    text-align: center;
 `
 
 const Modal = styled.div`
@@ -108,6 +115,7 @@ const Main = ({ setChoice, route, setRoute }) => {
     }
     const [modal, setModal] = useState(false);
   return (
+      <>
     <Container>
         <BigBlueCircle onClick={() => handleClick('paper')}>
             <Circle>
@@ -119,16 +127,8 @@ const Main = ({ setChoice, route, setRoute }) => {
                 <Rock/>
             </Circle>
         </BigRedCircle>
-        <NewLine>
-            <BigYellowCircle onClick={() => handleClick('scissors')}>
-                <Circle>
-                    <Scissors/>
-                </Circle>
-            </BigYellowCircle>
-        </NewLine>
-        <StyledTriangle>
-            <Triangle/> 
-        </StyledTriangle>
+        
+        
         <Rules setModal={setModal}/>
         {modal === true 
         ? 
@@ -165,7 +165,19 @@ const Main = ({ setChoice, route, setRoute }) => {
         </Modal> 
         : 
         ''}
+        
     </Container>
+    <StyledTriangle>
+            <Triangle/> 
+        </StyledTriangle>
+        <NewLine>
+            <BigYellowCircle onClick={() => handleClick('scissors')}>
+                <Circle>
+                    <Scissors/>
+                </Circle>
+            </BigYellowCircle>
+        </NewLine>
+        </>
   )
 }
 

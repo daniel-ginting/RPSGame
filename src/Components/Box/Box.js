@@ -27,7 +27,6 @@ const Title = styled.div`
 
 const ScoreBox = styled.div`
   background-color: white;
-  // flex:1;
   width: 150px;
   height: 115px;
   border-radius: 5px;
