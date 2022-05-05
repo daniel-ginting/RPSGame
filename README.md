@@ -1,5 +1,15 @@
 # Rock Paper Scissors (RPS) Game 🤓 
 
+## Description
+
+Just a simple game of rock, paper, scissors.
+
+## Technologies
+
+Mainly React
+
+## Logs
+
 Finish.... will write readme later.
 
 Live Preview: https://sad-tesla-3c7fd4.netlify.app
