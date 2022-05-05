@@ -8,7 +8,7 @@ Just a simple game of rock, paper, scissors.
 
 Mainly React also using styled-components
 
-## Logs
+### Logs
 
 Finish.... will write readme later.
 
