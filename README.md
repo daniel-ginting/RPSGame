@@ -6,7 +6,7 @@ Just a simple game of rock, paper, scissors.
 
 ## Technologies
 
-Mainly React
+Mainly React also using styled-components
 
 ## Logs
 
